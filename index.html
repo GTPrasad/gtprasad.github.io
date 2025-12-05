@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GTP Productions - Android Developer</title>
     <style>
+        /* General Body Styling */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -13,13 +14,18 @@
             color: #333;
             text-align: center;
         }
+
+        /* Header Image Banner */
         .header-banner {
             width: 100%;
             height: auto;
             max-height: 250px; /* Limit height of the banner */
-            object-fit: cover;
+            object-fit: cover; /* Ensures the image covers the area */
+            display: block; /* Removes any extra space below the image */
             margin-bottom: 30px;
         }
+        
+        /* Main Content Container */
         .container {
             width: 90%;
             max-width: 800px;
@@ -29,32 +35,54 @@
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             position: relative;
-            top: -50px; 
+            top: -50px; /* Pulls the container up to overlap the banner */
         }
+        
+        /* Heading Styles */
         h1 {
             color: #2c3e50;
             margin-bottom: 5px;
         }
+        h2 {
+            color: #3498db; /* A slightly softer blue */
+            margin-top: 30px;
+        }
+
+        /* Paragraph and Separator Styles */
         p {
             line-height: 1.6;
         }
+        hr {
+            border: 0;
+            border-top: 1px solid #eee;
+            margin: 30px 0;
+        }
+        
+        /* Logo Icon (Overlap) */
         .logo-icon {
-            width: 120px; 
+            width: 120px; /* Size of the logo */
             height: 120px;
             border-radius: 50%;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            border: 5px solid #fff;
-            margin-top: -80px; 
+            border: 5px solid #fff; /* White border to separate from banner */
+            margin-top: -80px; /* Pulls the icon up further onto the banner */
             margin-bottom: 20px;
         }
+        
+        /* App Link Styling */
         .app-link {
             display: inline-block;
-            margin: 20px 0;
+            margin: 20px 15px; /* Added horizontal margin to allow for multiple apps */
             text-decoration: none;
-            color: inherit;
+            color: #333;
+            transition: transform 0.2s;
         }
+        .app-link:hover {
+            transform: translateY(-5px); /* Simple hover effect */
+        }
+
         .app-icon {
-            width: 100px; /* Slightly larger icon for emphasis */
+            width: 100px; 
             height: 100px;
             border-radius: 18px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
@@ -64,15 +92,29 @@
         .app-name {
             font-weight: bold;
             font-size: 1.1em;
+            display: block; /* Ensures name is on its own line */
         }
+        
+        /* Footer and Links */
         .footer {
             margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
             font-size: 0.9em;
             color: #777;
+        }
+        .footer a {
+            color: #3498db;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
+    
     <img src="header_banner.jpg" alt="GTP Productions Banner" class="header-banner">
 
     <div class="container">
@@ -86,16 +128,20 @@
         
         <hr>
 
-        <h2>Our App</h2>
+        <h2>Our Apps</h2>
         
         <p>Check out our game on the Google Play Store:</p>
 
         <a href="https://play.google.com/store/apps/details?id=com.gtpproductions.sudoku" target="_blank" class="app-link">
-            <img src="app-icon.png" alt="App Icon" class="app-icon">
+            <img src="sudoku-app-icon.png" alt="Sudoku App Icon" class="app-icon">
             <span class="app-name">Sudoku : offline</span>
         </a>
         
         <div class="footer">
+            <a href="privacy-policy.html">Privacy Policy</a>
+            |
+            <a href="mailto:gtpproductions@gmail.com">Contact Us</a>
+            
             <p>&copy; 2025 GTP Productions. All rights reserved.</p>
         </div>
     </div>
