@@ -5,63 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - Sudoku : Offline</title>
     <style>
-        /* Basic Reset and Font */
+        /* General Body Styling (Copied from Index) */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f7f9;
+            background-color: #f4f4f4;
             color: #333;
+            text-align: center; /* Center content like on index.html */
         }
 
-        /* Header Banner Styling (Simplified for Policy) */
+        /* Header Image Banner (Copied from Index) */
         .header-banner {
             width: 100%;
+            height: auto;
+            max-height: 250px;
+            object-fit: cover;
+            display: block; 
+            margin-bottom: 30px;
+        }
+        
+        /* Main Content Container (Copied from Index) */
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px 30px; /* Adjusted padding for content */
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: relative;
+            top: -50px; /* Pulls the container up to overlap the banner */
+            text-align: left; /* Keep text aligned left for readability */
+        }
+        
+        /* Logo Icon (Overlap - Copied from Index) */
+        .logo-icon {
+            width: 120px;
             height: 120px;
-            background-color: #3f51b5; /* A standard deep blue for professional feel */
-            background-image: url('header_banner.jpg');
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            padding: 10px 0;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border: 5px solid #fff; 
+            margin-top: -80px;
+            margin-bottom: 20px;
+            display: block; /* Ensure it's treated like a block element */
+            margin-left: auto; /* Center the icon */
+            margin-right: auto; /* Center the icon */
+        }
+
+        /* Privacy Policy Specific Headings */
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 2em;
             text-align: center;
         }
 
-        .header-banner h1 {
-            margin: 0 0 5px 0;
-            font-size: 2.2em;
-        }
-
-        .header-details {
-            font-size: 0.9em;
-            opacity: 0.8;
-        }
-        
-        /* Main Content Container */
-        .container {
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 30px;
-            background-color: #ffffff;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-        }
-
-        /* Content Styling */
         h2 {
-            color: #3f51b5;
+            color: #3498db;
             border-bottom: 2px solid #e0e0e0;
             padding-bottom: 5px;
             margin-top: 30px;
         }
 
-        h3 {
-             color: #4a4a4a;
-             margin-top: 25px;
-        }
-
+        /* Paragraph and List Styling */
         p {
             line-height: 1.6;
             margin-bottom: 15px;
@@ -72,9 +79,10 @@
             list-style: square;
         }
         
+        /* Footer and Summary Styles */
         .summary-box {
-            border: 1px solid #4caf50; /* Green border for summary */
-            background-color: #e8f5e9; /* Light green background */
+            border: 1px solid #4caf50;
+            background-color: #e8f5e9;
             padding: 15px;
             margin-top: 30px;
             border-radius: 5px;
@@ -96,18 +104,33 @@
         a:hover {
             text-decoration: underline;
         }
+        
+        .footer {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            font-size: 0.9em;
+            color: #777;
+            text-align: center;
+        }
+        .footer a {
+            color: #3498db;
+            margin: 0 10px;
+            text-decoration: none;
+        }
     </style>
 </head>
 <body>
 
-    <header class="header-banner">
-        <h1>Privacy Policy for Sudoku : Offline</h1>
-        <div class="header-details">
-            <span>Developer: GTP Productions</span> | <span>Last updated: November 8, 2025</span>
-        </div>
-    </header>
+    <img src="header_banner.jpg" alt="GTP Productions Banner" class="header-banner">
 
     <div class="container">
+        <img src="logo_icon.jpg" alt="GTP Productions Logo Icon" class="logo-icon">
+
+        <h1>Privacy Policy for Sudoku : Offline</h1>
+        <p style="text-align: center; font-size: 0.9em; color: #777;">
+            Developer: GTP Productions | Last updated: November 8, 2025
+        </p>
         
         <h2>🧩 Introduction</h2>
         <p>Welcome to <strong>Sudoku : Offline</strong>.</p>
@@ -164,6 +187,13 @@
             </ul>
         </div>
         
+        <div class="footer">
+            <a href="index.html">Home Page</a>
+            |
+            <a href="mailto:gtpproductions@gmail.com">Contact Us</a>
+            
+            <p style="margin-top: 10px;">&copy; 2025 GTP Productions. All rights reserved.</p>
+        </div>
     </div>
 
 </body>
